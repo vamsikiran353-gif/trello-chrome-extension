@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trello Board Manager</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="app">
+    <h2 style="text-align:center;">Trello Board Manager</h2>
+    <div id="auth-section" style="text-align:center; margin-bottom: 10px;">
+      <button id="auth-btn" class="main-btn">Authenticate with Trello</button>
+      <button id="logout-btn" class="main-btn" style="display:none; margin-left: 10px;">Logout</button>
+    </div>
+    <div id="boards-section" style="display:none;">
+      <label for="board-select">Board:</label>
+      <select id="board-select"></select>
+      <label for="list-select">List:</label>
+      <select id="list-select"></select>
+      <input type="text" id="card-title" placeholder="Card Title">
+      <button id="add-card-btn" class="main-btn">Add Card</button>
+    </div>
+    <div id="ai-section" style="display:none; text-align:center; margin-top:10px;">
+      <!-- Placeholder for future AI features -->
+      <button id="ai-suggest-btn" class="main-btn">Suggest Card (AI)</button>
+    </div>
+    <div id="loading" style="display:none; text-align:center; margin-top:10px;">Loading...</div>
+    <div id="status" style="margin-top:10px; text-align:center;"></div>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
